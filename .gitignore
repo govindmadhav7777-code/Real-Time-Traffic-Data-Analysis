@@ -1,23 +1,84 @@
+# =========================
+
 # Python
-__pycache__/
-*.pyc
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*.pyo
+*.pyd
 .venv/
 venv/
+env/
+ENV/
 
-# Environment / secrets
+# =========================
+
+# Environment & Secrets
+
+# =========================
+
 .env
+.env.*
+!.env.example
 
-# Spark / Delta generated data
+# =========================
+
+# Spark / Delta Lake
+
+# =========================
+
 warehouse/
 spark-ivy/
+*.checkpoint/
+chk/
+checkpoints/
 
-# IDE
+# =========================
+
+# Spark Logs
+
+# =========================
+
+*.log
+logs/
+
+# =========================
+
+# IDE / Editors
+
+# =========================
+
 .vscode/
 .idea/
 
-# OS
+# =========================
+
+# OS Files
+
+# =========================
+
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Logs
-*.log
+# =========================
+
+# Jupyter Notebook
+
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+
+# Temporary Files
+
+# =========================
+
+*.tmp
+*.temp
+*.swp
+*~
+
